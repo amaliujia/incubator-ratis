@@ -352,7 +352,7 @@ public class ServerState implements Closeable {
 
   @Override
   public String toString() {
-    return getMemberId() + ":t" + currentTerm + ", leader=" + leaderId
+    return getMemberId() + ", term=" + currentTerm + ", leader=" + leaderId
         + ", voted=" + votedFor + ", raftlog=" + log + ", conf=" + getRaftConf();
   }
 
